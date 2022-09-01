@@ -35,3 +35,25 @@ def get_task():
 def get_message():
     message = input("Enter the secret message ")
     return message
+
+def start():
+  
+    while True:
+        task = get_task()
+        if task == "encrypt":
+            message = get_message()
+            encrypted = swap_letters(message)
+            
+            print("Ciphertext of the secret message is:", encrypted)
+        elif task == "decrypt":
+            message = get_message()
+            decrypted = swap_letters(message)
+            print("Playtext of the secret message is", decrypted)
+            
+        else:
+            break
+        
+    
+  
+    message = input("Enter the secret message ")
+    return message
