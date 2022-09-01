@@ -7,3 +7,10 @@ def get_even_letters(message):
         if is_even(counter):
             even_letters.append(message[counter])
     return even_letters
+
+def get_odd_letters(message):
+    odd_letters = []
+    for counter in range(0, len(message)):
+        if not is_even(counter):
+            odd_letters.append(message[counter])
+    return odd_letters
