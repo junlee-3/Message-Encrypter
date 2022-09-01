@@ -26,3 +26,12 @@ def swap_letters(message):
         letter_list.append(even_letters[counter])
     new_message = ''.join(letter_list)
     return new_message
+
+def get_task():
+    global sprite
+    task = input("Do You want to encrypt or decrypt ")
+    return task
+    
+def get_message():
+    message = input("Enter the secret message ")
+    return message
