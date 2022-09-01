@@ -7,14 +7,14 @@ def get_even_letters(message):
         if is_even(counter):
             even_letters.append(message[counter])
     return even_letters
-
+    
 def get_odd_letters(message):
     odd_letters = []
     for counter in range(0, len(message)):
         if not is_even(counter):
             odd_letters.append(message[counter])
     return odd_letters
-
+    
 def swap_letters(message):
     letter_list = []
     if not is_even(len(message)):
@@ -26,7 +26,6 @@ def swap_letters(message):
         letter_list.append(even_letters[counter])
     new_message = ''.join(letter_list)
     return new_message
-
 def get_task():
     global sprite
     task = input("Do You want to encrypt or decrypt ")
@@ -35,6 +34,7 @@ def get_task():
 def get_message():
     message = input("Enter the secret message ")
     return message
+    
 
 def start():
   
@@ -53,7 +53,4 @@ def start():
         else:
             break
         
-    
-  
-    message = input("Enter the secret message ")
-    return message
+    return start()
